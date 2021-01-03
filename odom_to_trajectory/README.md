@@ -30,3 +30,6 @@ $ source devel/setup.bash
 ```sh
 $ roslaunch odom_to_trajectory create_trajectory.launch
 ```
+## `rqt_graph` view
+
+![image](Images/rqt_image.png)
