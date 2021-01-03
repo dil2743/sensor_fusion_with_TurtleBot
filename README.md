@@ -37,4 +37,12 @@
 	![topic list as graph](image/topicRQT.png)
    
 # *robot_pose_ekf* Package
-[chek readme file](robot_pose_ekf/README.md)
+[check readme file](robot_pose_ekf/README.md)
+
+# *odom_to_trajectory* Package
+
+this package will produce robot two trajectory after accumulating 1000 samples from below sources
+* one based odom data
+* other with ekf_output data
+
+[check odom_to_trajectory_package](odom_to_trajectory/README.md)
