@@ -10,7 +10,7 @@
   `roslaunch turtlebot_gazebo turtlebot_world.launch` 
   
   ### You may see some error like this 
-  
+
   ![environment variable 'TURTLEBOT_GAZEBO_WORLD_FILE' is not set](image/error.png)
   
    So the error itself clearly says that the enviroment variable for 'TURTLEBOT_GAZEBO_WORLD_FILE' is not set
