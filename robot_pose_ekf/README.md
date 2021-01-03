@@ -2,7 +2,7 @@ robot_pose_ekf [![Build Status](https://travis-ci.com/ros-planning/robot_pose_ek
 ========================================================================================================================================================
 Proper discription about package can be found on [robot_pose_ekf package page](http://wiki.ros.org/robot_pose_ekf)
 ## Integration with *tertlebot_simulation* package
-The robot_pose_ekf depends on three sensor nodes 
+The robot_pose_ekf depends on three sensor nodes  (atleast 2 of the 3 sensors are required)
   * IMU
   * Odometry
   * RGB-D camera
@@ -23,3 +23,8 @@ but the turtlebot_package publishes the data of above sensors on below topic
 * RGB-D image -> `/camera/depth/image_raw`
 
 so we need to map these topics, this can be achived by using the remap tag in launch file (check the `robot_pose_ekf.launch` file)
+
+![topic image](https://github.com/dil2743/sensor_fusion_with_TurtleBot/blob/main/image/robot_pose_ekf.PNG)
+
+
+![over all without camera](https://github.com/dil2743/sensor_fusion_with_TurtleBot/blob/main/image/ekf2.PNG)
