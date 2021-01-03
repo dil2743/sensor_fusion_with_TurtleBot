@@ -37,4 +37,4 @@
 	![topic list as graph](image/topicRQT.png)
    
 # *robot_pose_ekf* Package
-[chek readme file](sensor_fusion_with_TurtleBot/robot_pose_ekf/README.md)
+[chek readme file](robot_pose_ekf/README.md)
