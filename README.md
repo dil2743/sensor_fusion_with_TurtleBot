@@ -29,3 +29,10 @@
    ### turtlebot world
    ![world view](image/world.png)
    
+    we can check all the topics which the robot is publishing and subscribing by two method, 
+	run any of the command given below	
+  * `rostopic list` command
+	![topic list](image/topiclist.png)
+  * `rqt_graph` command
+	![topic list as graph](image/topicRQT.png)
+   
