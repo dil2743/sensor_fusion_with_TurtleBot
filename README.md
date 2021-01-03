@@ -32,7 +32,7 @@
     we can check all the topics which the robot is publishing and subscribing by two method, 
 	run any of the command given below	
   * `rostopic list` command
-	![topic list](image/topiclist.png)
+	![topic list](image/topiclist.PNG)
   * `rqt_graph` command
 	![topic list as graph](image/topicRQT.png)
    
@@ -46,3 +46,10 @@ this package will produce robot two trajectory after accumulating 1000 samples f
 * other with ekf_output data
 
 [check odom_to_trajectory_package](odom_to_trajectory/README.md)
+
+## *turtlebot* package 
+
+[this package will be used to issue command to the robot ( teleop) ](https://github.com/dil2743/sensor_fusion_with_TurtleBot/tree/main/turtlebot)
+
+![so all the nodes are alligned now](image/final.PNG)
+
