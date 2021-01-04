@@ -53,3 +53,36 @@ this package will produce robot two trajectory after accumulating 1000 samples f
 
 ![so all the nodes are alligned now](image/final.PNG)
 
+## *Launch everything at once*
+To launch all the nodes with a lauch file we can run the command 
+`roslaunch main_package main.launch`
+it will launch
+ * gazebo world with turtlebot
+ * rviz
+ * turtlebot_teleop_node 
+ * ekf_package nodes
+ * odom_to_trajectory
+ * also it will load the rviz with configuration file located in main_package
+ 
+ ## *Image from RVIZ view*
+ 
+ ![Rviz showing trajectory](image/rviz_image.png)
+ 
+ ![Rviz ahowing particals](image/rviz_image2.png)
+
+### *Visualize trajectories in `rqt_multiplot` *
+
+Installing required pacages
+
+ `apt-get install ros-kinetic-rqt -y`
+ 
+ `apt-get install ros-kinetic-rqt-multiplot -y`
+	
+ `apt-get install libqwt-dev -y`
+	
+ `rm -rf ~/.config/ros.org/rqt_gui.ini`
+	
+Launch the rqt_multiplot by `rosrun rqt_multiplot rqt_multiplot` command
+
+Create two plot one from `/odom` topic and from **filtered_pose_from_ekf_pacage** `robot_pose_ekf/odom_combined` topic 
+so genrate two graph X vs Y axis from above topics and you will be able to monitor the poses in qut_multiplot window after tapping on play button (don't forgot to navigate the robot with teleop command as the graph will not update without it)
