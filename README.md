@@ -70,3 +70,19 @@ it will launch
  
  ![Rviz ahowing particals](image/rviz_image2.png)
 
+### *Visualize trajectories in `rqt_multiplot` *
+
+Installing required pacages
+
+ `apt-get install ros-kinetic-rqt -y`
+ 
+ `apt-get install ros-kinetic-rqt-multiplot -y`
+	
+ `apt-get install libqwt-dev -y`
+	
+ `rm -rf ~/.config/ros.org/rqt_gui.ini`
+	
+Launch the rqt_multiplot by `rosrun rqt_multiplot rqt_multiplot` command
+
+Create two plot one from `/odom` topic and from **filtered_pose_from_ekf_pacage** `robot_pose_ekf/odom_combined` topic 
+so genrate two graph X vs Y axis from above topics and you will be able to monitor the poses in qut_multiplot window after tapping on play button (don't forgot to navigate the robot with teleop command as the graph will not update without it)
