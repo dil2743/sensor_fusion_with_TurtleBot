@@ -53,3 +53,20 @@ this package will produce robot two trajectory after accumulating 1000 samples f
 
 ![so all the nodes are alligned now](image/final.PNG)
 
+## *Launch everything at once*
+To launch all the nodes with a lauch file we can run the command 
+`roslaunch main_package main.launch`
+it will launch
+ * gazebo world with turtlebot
+ * rviz
+ * turtlebot_teleop_node 
+ * ekf_package nodes
+ * odom_to_trajectory
+ * also it will load the rviz with configuration file located in main_package
+ 
+ ## *Image from RVIZ view*
+ 
+ ![Rviz showing trajectory](image/rviz_image.png)
+ 
+ ![Rviz ahowing particals](image/rviz_image2.png)
+
